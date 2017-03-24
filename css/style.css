@@ -16,6 +16,13 @@ a, a:hover {
   padding: 0;
 }
 
+.separator {
+  height: 3px;
+  width: 5%;
+  border: none;
+  background-color: #303030;
+}
+
 
 /*header*/
 .header {
@@ -83,7 +90,18 @@ a, a:hover {
 }
 
 /*about*/
+#about {
+ text-align: center;
+ padding top: 10%;
+}
 
+.about article h2{
+ text-align: center; 
+}
+
+.about article {
+  margin-top: 10%;
+}
 /*portfolio*/
 
 /*contact*/
