@@ -101,8 +101,26 @@ a, a:hover {
 
 .about article {
   margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 /*portfolio*/
+#portfolio {
+ text-align: center; 
+}
+
+.portfolio {
+  height: 280px;
+  background-color: #989898;
+}
 
 /*contact*/
+
+.footer {
+ background-color: linear-gradient(to bottom, #303030 0%, #888888 100%); 
+}
+
+#contact {
+ color: #585858;
+  text-align: center;
+}
