@@ -19,9 +19,9 @@ a, a:hover {
 
 /*header*/
 .header {
-  background-color: #3498DB ;
-  height: 70 px;
-  line-height: 70 px;
+  background-color: #00bfff ;
+  height: 70px;
+  line-height: 70px;
 }
 
 .logo {
@@ -42,7 +42,7 @@ a, a:hover {
 }
 
 .menu a:hover {
-  color: #2C3E5C;
+  color: #00394d;
 }
 
 /*banner*/
