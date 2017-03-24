@@ -60,6 +60,28 @@ a, a:hover {
   width: 100%;
   max-width: 100%; 
 }
+
+.inner-banner{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+
+.inner-banner h1{
+  color: #ffffff;
+  text-shadow: 1px 1px 20px #000000;
+}
+
+.inner-baner .btn-custom{
+  background-color: #303030;
+  color: #ffffff;
+}
+
+.inner-banner .btn-custom:hover {
+  background-color: #888888;
+}
+
 /*about*/
 
 /*portfolio*/
