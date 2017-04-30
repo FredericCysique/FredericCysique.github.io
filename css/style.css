@@ -111,12 +111,12 @@ a, a:hover {
  background-color: #989898; 
 }
 
-/*.footer p {
+.footer p {
   color: #ffffff;
   text-align: center;
   padding-top: 5%;
 }
-*/
+
 
 body{
 	width:100%;
@@ -154,5 +154,7 @@ a:hover,a:focus{
 
 textarea.form-control{
     height:100px;
+	text-align:center;
+
 }
 
