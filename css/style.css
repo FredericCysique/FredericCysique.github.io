@@ -139,11 +139,11 @@ p{
 	line-height:1.6em;
 }
 a{
-	color:#0066ff;
+	color:#000066;
 }
 a:hover,a:focus{
 	text-decoration:none;
-	color:#0066ff;
+	color:#000066;
 }
 
 #contact{
