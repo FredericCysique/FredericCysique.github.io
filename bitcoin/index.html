@@ -38,17 +38,51 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-<!-- <link rel="stylesheet" media="all" type="text/css"
-	href="FredericCysique.github.io/bitcoin/style.css " /> -->
 
 <!-- Fonts Awesome : Pour les icones -->
 <link
 	href="https://blackrockdigital.github.io/startbootstrap-sb-admin/font-awesome/css/font-awesome.min.css"
 	rel="stylesheet" type="text/css">
 <!-- BITCOIN -->
-<script  type="text/javascript" src="FredericCysique.github.io/js/script.js" defer></script>
+<!--<script  type="text/javascript" src="FredericCysique.github.io/js/script.js" defer></script> -->
+$(document).ready(function() {
+	$.ajax({
+		url : "https://api.blockcypher.com/v1/btc/main",
+		dataType : "json",
+		contentType : "application/json; charset=utf-8",
+		type : "GET",
+		timeout:	"5000",
+		async : false,
 
-<!-- footer-->
+		success : function(data) {
+			$('#bitcoin_block_number').append(data.height);
+		},
+
+		error : function(xhr, status, err) {
+			$('#bitcoin_block_number').append(err+" N/A");
+		}
+	});
+});
+$(document).ready(function() {
+	$.ajax({
+		url : "https://api.blockcypher.com/v1/btc/main",
+		dataType : "json",
+		contentType : "application/json; charset=utf-8",
+		type : "GET",
+		timeout:	"5000",
+		async : false,
+
+		success : function(data) {
+			$('#bitcoin_network_hash').append(data.time);
+		},
+
+		error : function(xhr, status, err) {
+			$('#bitcoin_network_hash').append(err+" N/A");
+		}
+	});
+});
+
+
 <style>
 	.panel-green {
     border-color: #5cb85c;
